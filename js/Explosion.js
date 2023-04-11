@@ -31,8 +31,8 @@ class Explosion {
         this.x += this.vx
         this.vy += this.gravity
         this.y += this.vy
-        if (this.size > 0.2) {
-            this.size -= 0.2
+        if (this.size > 0.3) {
+            this.size -= 0.3
         } else {
             this.deletion = true
         }

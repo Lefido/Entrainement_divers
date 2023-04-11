@@ -8,6 +8,7 @@ class Game {
     constructor(width, height) {
         this.width = width
         this.height = height
+        this.trajectoires = []
         this.circles = []
         this.explosions = []
         this.songs = []
@@ -25,7 +26,7 @@ class Game {
 
             this.timerBall++
 
-            if (this.timerBall % 25 === 0) {
+            if (this.timerBall % 50 === 0) {
                 this.addCircle(Math.random() * this.width, -Math.random() * this.height / 2)
                 this.timerBall = 0
             }
